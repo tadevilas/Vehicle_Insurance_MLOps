@@ -1,0 +1,11 @@
+[project]
+name = "src"  # This should match the top-level package in /src
+version = "0.0.1"
+description = "An MLOps project for productionizing models"
+authors = [{name = "Vilas Tade", email = "tadevilas@gmail.com"}]
+
+[tool.setuptools]
+packages = {find = {}}
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
